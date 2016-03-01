@@ -10,8 +10,8 @@ Twig template adapter for ThinkJS
 
 #### register adapter
 
-  import TwigAdapter from 'think-template-twig';
-  think.adapter('template', 'twig', TwigAdapter);
+    import TwigAdapter from 'think-template-twig';
+    think.adapter('template', 'twig', TwigAdapter);
 
 add above code in bootstrap file, like `src/common/bootstrap/adapter.js`.
 
