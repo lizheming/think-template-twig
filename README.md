@@ -26,6 +26,10 @@ change view type in file `src/common/config/view.js`:
         //set prerender function if you want extend your twig template
         prerender(Twig, templateFile) {
           Twig.extendFunction('repeat', (value, times) => return new Array(times+1).join(value));
+
+          //more custom see
+          //https://github.com/justjohn/twig.js/wiki/Extending-twig.js
+          //https://github.com/justjohn/twig.js/wiki/Extending-twig.js-With-Custom-Tags
         }
       }
     }
