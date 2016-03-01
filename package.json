@@ -1,0 +1,31 @@
+{
+  "name": "think-template-twig",
+  "version": "1.0.0",
+  "description": "twig template adapter for ThinkJS",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec --timeout 5000 --recursive test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizheming/think-template-twig.git"
+  },
+  "keywords": [
+    "thinkjs",
+    "twig",
+    "template"
+  ],
+  "author": "lizheming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lizheming/think-template-twig/issues"
+  },
+  "homepage": "https://github.com/lizheming/think-template-twig#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "thinkjs": "^2.1.7"
+  },
+  "dependencies": {
+    "twig": "^0.8.8"
+  }
+}
