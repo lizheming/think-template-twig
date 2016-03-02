@@ -1,6 +1,6 @@
 {
   "name": "think-template-twig",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "twig template adapter for ThinkJS",
   "main": "lib/index.js",
   "scripts": {
