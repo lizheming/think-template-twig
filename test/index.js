@@ -23,4 +23,24 @@ describe('think-template-twig', function() {
       console.log(err.stack);
     });
   });
+
+  it('extend', function(done) {
+    var instance = new Class();
+    var filePath = path.join(__dirname, 'b.html');
+    fs.writeFileSync(filePath, '{{ repeat("_.", 10) }}');
+
+    instance.run(filePath, {}, {
+      prerender: function(Twig) {
+        Twig.extendFunction('repeat', function(value, times) {
+          return new Array(times+1).join(value);
+        });
+      }
+    }).then(function(content) {
+      assert.equal(content, '_._._._._._._._._._.');
+      fs.unlinkSync(filePath);
+      done();
+    }).catch(function(err) {
+      console.log(err.stack);
+    });
+  })
 });
