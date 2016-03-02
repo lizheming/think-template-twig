@@ -10,8 +10,8 @@ Twig template adapter for ThinkJS
 
 #### register adapter
 
-  import TwigAdapter from 'think-template-twig';
-  think.adapter('template', 'twig', TwigAdapter);
+    import TwigAdapter from 'think-template-twig';
+    think.adapter('template', 'twig', TwigAdapter);
 
 add above code in bootstrap file, like `src/common/bootstrap/adapter.js`.
 
@@ -25,7 +25,7 @@ change view type in file `src/common/config/view.js`:
 	  twig: { //twig options
 	  	 //set prerender function if you want extend your twig template
 	  	 prerender(Twig, templateFile) {
-          Twig.extendFunction('repeat', (value, times) => return new Array(times+1).join(value));
+          Twig.extendFunction('repeat', (value, times) => new Array(times+1).join(value));
 
           //more custom see
           //https://github.com/justjohn/twig.js/wiki/Extending-twig.js
