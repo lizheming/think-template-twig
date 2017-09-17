@@ -1,5 +1,7 @@
 ## think-template-twig
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lizheming/think-template-twig.svg)](https://greenkeeper.io/)
+
 Twig template adapter for ThinkJS
 
 ### Install
