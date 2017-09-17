@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/lizheming/think-template-twig#readme",
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "thinkjs": "^2.1.7"
+    "mocha": "^3.5.3",
+    "thinkjs": "^3.1.2"
   },
   "dependencies": {
-    "twig": "^0.8.8"
+    "twig": "^1.10.5"
   }
 }
